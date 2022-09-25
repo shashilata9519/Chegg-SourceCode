@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+.App {
+  text-align: center;
+  border: 2px solid gray;
+  padding: 10px;
+  
+}
+body{
+  /* background-color:#181d1d78!important; */
+  /* background: url("../src/video/img1.png"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Akaya Kanadaka', cursive !important; 
+  
+
+}
+.navbar{
+  background-color: #603f83 !important;
+}
+.navbar-brand{
+  font-weight: bold !important;
+  color: orange !important;
+  
+}
+.nav-link{
+  color: white !important;
+  cursor: pointer !important;
+}
+.container video{
+  
+ margin-top: 20px;
+ padding: 10px;
+
+}
+.board-btn{
+  margin-left: 70px;
+}
+.textarea a{
+  color: rgb(2, 5, 7) !important;
+  font-weight: bold;
+
+}
+
+
+
+.products a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.products img{
+  border: 2px solid gray;
+  margin-bottom: 10px;
+}
+
+.textarea .active{
+  background-color: rgb(250, 150, 20) !important;
+}
+
+.chat-section .chat{
+  width: 300px !important;
+  height: 300px !important;
+  
+}
+
+.chat-section button{
+  box-shadow: 3px 3px gray;
+  /* font-size: 20px !important; */
+  
+}
+.chat-section .subtitle-button:hover{
+  background-color: rgb(250, 150, 20) !important;
+
+}
+.subtitle button,.subtitle-btn select{
+  font-weight: bold;
+}
+
+.subtitle-text{
+  /* border:  2px solid gray; */
+  width: 600px;
+  padding: 10px;
+  height: 150px;
+  
+}
+textarea,.subtitle-text{
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+
+.modal-header{
+  background-color: rgb(209, 209, 249);
+}
+.location{
+  color: black !important;
+}
+
+.navbar .th{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.navbar .modal-body span{
+  font-weight: bold;
+  
+}

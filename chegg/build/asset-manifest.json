@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/cheggproject/static/css/main.5208641e.css",
+    "main.js": "/cheggproject/static/js/main.e3e77b67.js",
+    "static/js/787.e999b3b0.chunk.js": "/cheggproject/static/js/787.e999b3b0.chunk.js",
+    "static/media/video1.mp4": "/cheggproject/static/media/video1.73756c89d428ae135b4b.mp4",
+    "static/media/img1.png": "/cheggproject/static/media/img1.3e461d4ba8b1e011fa99.png",
+    "index.html": "/cheggproject/index.html",
+    "main.5208641e.css.map": "/cheggproject/static/css/main.5208641e.css.map",
+    "main.e3e77b67.js.map": "/cheggproject/static/js/main.e3e77b67.js.map",
+    "787.e999b3b0.chunk.js.map": "/cheggproject/static/js/787.e999b3b0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5208641e.css",
+    "static/js/main.e3e77b67.js"
+  ]
+}
