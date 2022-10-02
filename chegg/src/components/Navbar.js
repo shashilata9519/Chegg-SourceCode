@@ -66,7 +66,7 @@ function Navbar() {
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
             <li className="nav-item">
                 <a
-                  className="nav-link mx-5 "
+                  className="nav-link mx-5 fs-6"
                   aria-current="page"
                   
                 >
@@ -75,7 +75,7 @@ function Navbar() {
               </li>
               <li className="nav-item">
                 <a
-                  className="nav-link mx-3"
+                  className="nav-link mx-2 fs-6"
                   aria-current="page"
                   
                 >
@@ -84,7 +84,7 @@ function Navbar() {
               </li>
               <li className="nav-item">
                 <a
-                  className="nav-link mx-5 "
+                  className="nav-link mx-5 fs-6"
                   aria-current="page"
                   
                 >
@@ -100,7 +100,7 @@ function Navbar() {
                   data-bs-target="#exampleModal"
                   onClick={handleLocation}
                 >
-                  Local Support
+                 <i className="fas fa-search-location  text-warning"></i> Local Support
                 </a>
               </li>
               <div
@@ -114,7 +114,7 @@ function Navbar() {
                   <div className="modal-content">
                     <div className="modal-header">
                       <h5 className="modal-title" id="exampleModalLabel">
-                        Local Support 
+                      Local Support 
                       </h5>
                       <button
                         type="button"
@@ -154,25 +154,28 @@ function Navbar() {
                                       <div className="th">
                                         <div>{i.city[0]}</div>
 
-                                        <a href={i.link[0]} target="_blank">
-                                          lab location
+                                        <a href={i.link[0]} className="ms-3" target="_blank">
+                                          Visit
                                         </a>
+                                        <button className="btn btn-success">Register</button>
                                       </div>
                                       <br />
                                       <div className="th">
                                         <div>{i.city[1]}</div>
 
-                                        <a href={i.link[1]} target="_blank">
-                                          lab location
+                                        <a href={i.link[1]} className="px-2" target="_blank">
+                                          Visit
                                         </a>
+                                        <button className="btn btn-success">Register</button>
                                       </div>
                                       <br />
                                       <div className="th">
                                         <div> {i.city[2]}</div>
 
-                                        <a href={i.link[2]} target="_blank">
-                                          lab location
+                                        <a href={i.link[2]} className="ps-5" target="_blank">
+                                          Visit
                                         </a>
+                                        <button className="btn btn-success">Register</button>
                                       </div>
                                     </div>
                                   </>
@@ -198,24 +201,27 @@ function Navbar() {
                                         <div>{i.city[0]}</div>
 
                                         <a href={i.link[0]} target="_blank">
-                                          lab location
+                                          Visit
                                         </a>
+                                        <button className="btn btn-success">Register</button>
                                       </div>
                                       <br />
                                       <div className="th">
                                         <div>{i.city[1]}</div>
 
                                         <a href={i.link[1]} target="_blank">
-                                          lab location
+                                          Visit
                                         </a>
+                                        <button className="btn btn-success">Register</button>
                                       </div>
                                       <br />
                                       <div className="th">
                                         <div>{i.city[2]}</div>
 
                                         <a href={i.link[2]} target="_blank">
-                                          lab location
+                                          Visit
                                         </a>
+                                        <button className="btn btn-success">Register</button>
                                       </div>
                                     </div>
                                   </>
@@ -241,8 +247,9 @@ function Navbar() {
                                         <div>{i.city[0]}</div>
 
                                         <a href={i.link[0]} target="_blank">
-                                          lab location
+                                          Visit
                                         </a>
+                                        <button className="btn btn-success">Register</button>
                                       </div>
                                     </div>
                                   </>
@@ -274,7 +281,7 @@ function Navbar() {
                   data-bs-target="#exampleModal1"
                   onClick={handleProduct}
                 >
-                  Relevent Material
+                  <i className="fas fa-shopping-bag text-warning"></i> Relevent Material
                 </a>
               </li>
               <div
@@ -288,7 +295,7 @@ function Navbar() {
                   <div className="modal-content">
                     <div className="modal-header">
                       <h5 className="modal-title" id="exampleModalLabel">
-                        Purchase for Soil Fertility
+                        Purchase 
                       </h5>
                       <button
                         type="button"
@@ -333,6 +340,7 @@ function Navbar() {
                                         <div>
                                          <span>Organic Fertilizer Shop :</span> 
                                           {i.organicFertilizers[0]}
+                                          <button className="btn btn-outline-success mt-2">buy now</button>
                                         </div>
                                       </div>
                                       <br />
@@ -341,7 +349,8 @@ function Navbar() {
 
                                         <div>
                                          <span>Organic Fertilizer Shop : </span> 
-                                          {i.organicFertilizers[1]}
+                                          {i.organicFertilizers[1]}<br/>
+                                          <button className="btn btn-outline-success mt-2">buy now</button>
                                         </div>
                                       </div>
                                       <br />
@@ -350,7 +359,8 @@ function Navbar() {
 
                                         <div>
                                          <span> Organic Fertilizer Shop:</span>
-                                          {i.organicFertilizers[2]}
+                                          {i.organicFertilizers[2]}<br/>
+                                          <button className="btn btn-outline-success mt-2">buy now</button>
                                         </div>
                                       </div>
                                     </div>
@@ -379,7 +389,8 @@ function Navbar() {
 
                                         <div>
                                          <span> Organic Fertilizer Shop : </span>
-                                          {i.organicFertilizers[0]}
+                                          {i.organicFertilizers[0]}<br/>
+                                          <button className="btn btn-outline-success mt-2">buy now</button>
                                         </div>
                                       </div>
                                       <br />
@@ -388,7 +399,8 @@ function Navbar() {
 
                                         <div>
                                          <span> Organic Fertilizer Shop : </span>
-                                          {i.organicFertilizers[2]}
+                                          {i.organicFertilizers[2]}<br/>
+                                          <button className="btn btn-outline-success mt-2">buy now</button>
                                         </div>
                                       </div>
                                       <br />
@@ -397,7 +409,8 @@ function Navbar() {
 
                                         <div>
                                          <span> Organic Fertilizer Shop : </span>
-                                          {i.organicFertilizers[2]}
+                                          {i.organicFertilizers[2]}<br/>
+                                          <button className="btn btn-outline-success mt-2">buy now</button>
                                         </div>
                                       </div>
                                     </div>
@@ -426,7 +439,8 @@ function Navbar() {
 
                                         <div>
                                           <span>Organic Fertilizer Shop : </span>
-                                          {i.organicFertilizers[0]}
+                                          {i.organicFertilizers[0]}<br/>
+                                          <button className="btn btn-outline-success mt-2">buy now</button>
                                         </div>
                                       </div>
                                       <br />
@@ -435,7 +449,8 @@ function Navbar() {
 
                                         <div>
                                           <span>Organic Fertilizer Shop : </span>
-                                          {i.organicFertilizers[1]}
+                                          {i.organicFertilizers[1]}<br/>
+                                          <button className="btn btn-outline-success mt-2">buy now</button>
                                         </div>
                                       </div>
                                     </div>
@@ -468,7 +483,7 @@ function Navbar() {
                   data-bs-target="#examplework"
                   onClick={handleWorkshop}
                 >
-                  Workshop
+                  <i className="fas fa-store-alt text-warning"></i> Workshop
                 </a>
               </li>
               <div
@@ -502,6 +517,7 @@ function Navbar() {
                                   <div><span>State : </span>{i.state}</div>
                                   <div><span>City : </span>{i.city}</div>
                                   <div><span>Lab : </span>{i.lab} <a href={i.link}>visit</a></div>
+                                  <button className="btn btn-outline-info mt-2">BOOK YOUR SEAT</button>
 
                               </div>
                               </>

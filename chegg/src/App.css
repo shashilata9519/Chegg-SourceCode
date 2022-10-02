@@ -85,9 +85,7 @@ body{
   height: 150px;
   
 }
-textarea,.subtitle-text{
-  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
-}
+
 
 .modal-header{
   background-color: rgb(209, 209, 249);
@@ -105,4 +103,30 @@ textarea,.subtitle-text{
 .navbar .modal-body span{
   font-weight: bold;
   
+}
+.nav-pills{
+  margin: 10px auto;
+}
+.nav-pills .nav-link.active{
+  color: black !important;
+  border: 2px solid purple !important;
+  background-color: white !important;
+}
+.nav-pills .nav-link{
+  background-color: white;
+  color: rgb(25, 29, 29) !important;
+  
+}
+.right .tab-pane{
+  margin-top: -40px !important;
+}
+video{
+  width: 100%;
+  height: 100%;
+}
+
+.rightDiv{
+  width: 600px;
+  height: 300px;
+
 }

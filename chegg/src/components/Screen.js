@@ -7,6 +7,7 @@ function Screen() {
   const [flag, setFlag] = useState(false);
   const [lang, setLang] = useState([]);
   const [subtitle, setSub] = useState("");
+  const [msg, setMsg] = useState("Live Chat");
 
   useEffect(() => {
     getLanguage();
@@ -21,11 +22,13 @@ function Screen() {
   };
 
   const handleClick = () => {
-    setFlag(true);
+    setFlag((val) => !val);
+
+    setTimeout(() => {
+      setMsg("End Chat");
+    }, 1000);
   };
-  const doubleClick=()=>{
-    setFlag(false)
-  }
+  
 
   return (
     <div className="container main-screen">
@@ -48,36 +51,7 @@ function Screen() {
                 </a>
               </li>
 
-              <li className="nav-item" role="presentation">
-                <a
-                  className="nav-link btn btn-info"
-                  data-bs-toggle="tab"
-                  id="draw-tab"
-                  type="button"
-                  data-bs-target="#draw"
-                  role="tab"
-                  aria-controls="draw"
-                  aria-selected="true"
-                >
-                  {" "}
-                  Whiteboard
-                </a>
-              </li>
-              <li className="nav-item" role="presentation">
-                <a
-                  className="nav-link btn btn-info"
-                  data-bs-toggle="tab"
-                  id="code-tab"
-                  type="button"
-                  data-bs-target="#code"
-                  role="tab"
-                  aria-controls="code"
-                  aria-selected="true"
-                >
-                  {" "}
-                  Code Editor
-                </a>
-              </li>
+              
             </ul>
             <div className="tab-control w-75" id="#myTabControl">
               <div
@@ -96,7 +70,6 @@ function Screen() {
               <select
                 className="form-select btn-outline-warning"
                 aria-label="Default select example"
-               
                 value={subtitle}
                 onChange={(e) => {
                   setSub(e.target.value);
@@ -138,11 +111,53 @@ function Screen() {
             </ul>
           </div>
         </div>
-        <div className="d-flex flex-column right text-center mt-2">
-          <video src={video1} controls="control" width="600px" height="400px" />
-          <div className="chat-section ">
-            <button className="btn btn-outline-dark w-50 subtitle-button" onClick={handleClick} onDoubleClick={doubleClick}>
-              Live chat
+        <div className="d-flex flex-column right text-center mt-4">
+          <ul className="nav nav-pills">
+            <li className="nav-item">
+              <button
+                className="nav-link active mb-3"
+                data-bs-toggle="tab"
+                type="button"
+                href="#recorded"
+              >
+                Recorded Video
+              </button>
+            </li>
+            <li className="nav-item">
+              <button
+                className="nav-link mb-3"
+                data-bs-toggle="tab"
+                type="button"
+                href="#live"
+              
+              >
+                Live Video
+              </button>
+            </li>
+          </ul>
+          <div className="tab-content w-75 mb-3">
+            <div className="tab-pane active rightDiv" id="recorded">
+              
+                <video src={video1} controls="control" />
+             
+            </div>
+            <div id="live" className="tab-pane rightDiv">
+              
+                <video
+                  src="https://www.youtube.com/watch?v=6212IjhOyCc"
+                  controls="control"
+                  
+                />
+              </div>
+            
+          </div>
+         
+          <div className="chat-section mt-3">
+            <button
+              className="btn btn-outline-dark w-50 subtitle-button"
+              onClick={handleClick}
+            >
+              {msg}
             </button>
             {flag ? (
               <ChatBot
@@ -158,7 +173,6 @@ function Screen() {
                     options: [
                       { value: 1, label: "Technical issue", trigger: "3" },
                       { value: 2, label: "chat with tutor", trigger: "4" },
-                      
                     ],
                   },
                   {
@@ -166,17 +180,17 @@ function Screen() {
                     options: [
                       { value: 1, label: "video issue", trigger: "5" },
                       { value: 2, label: "audio issue", trigger: "5" },
-                      
                     ],
                   },
                   {
                     id: "4",
                     message: "Request has been sent",
-                    end:true
+                    end: true,
                   },
                   {
                     id: "5",
-                    message: "Sorry for the inconvenience, We will solve the problem soon",
+                    message:
+                      "Sorry for the inconvenience, We will solve the problem soon",
                     end: true,
                   },
                 ]}
